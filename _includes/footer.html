@@ -1,5 +1,8 @@
 <footer>
-	<p class="footerText">Made by {% if site.your_link %}<a href="{{ site.your_link }}">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}{% if site.your_city %} in {{ site.your_city }}{% endif %}</p>
+	<p class="footerText">
+		<strong>한국디지털미디어고등학교</strong> IMAGINE<br>
+		<a href="https://www.facebook.com/profile.php?id=100013538622645">김상민</a>, <a href="https://www.facebook.com/juno3704">여준호</a>
+	</p>
 	<div class="footerIcons">
 
 		{% if site.facebook_username %}
@@ -40,11 +43,8 @@
 
 	</div>
 	<div class="footerLinks">
-		{% for page in site.pages %}
-			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
-		{% endfor %}
 		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}">Press Kit</a>
+			<a href="{{ site.presskit_download_link }}">프로토타입 살펴보기</a>
 		{% endif %}
 	</div>
 </footer>
